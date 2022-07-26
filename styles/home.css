@@ -1,0 +1,119 @@
+.first-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding: max(0.7em, 0.7vw) max(0.5em, 0.5vw);
+  margin: max(1em, 1vw) auto;
+}
+
+.first-container .first-section {
+  width: 49%;
+  padding: max(0.3em, 0.3vw) max(0.5em, 0.5vw);
+  position: relative;
+  background-color: #023047;
+}
+
+.first-section p {
+  margin-bottom: max(5em, 5vw);
+  color: #fff;
+  font-size: max(1.2em, 1.2vw);
+}
+
+.first-section .btn-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: max(1rem, 1vw) 0;
+  bottom: 0;
+}
+
+.first-container .second-section {
+  width: 49%;
+}
+
+.second-section img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.second-container {
+  width: 90%;
+  padding: max(0.7em, 0.7vw) max(0.5em, 0.5vw);
+  margin: max(1em, 1vw) auto;
+}
+
+.second-container .container-title p {
+  font-size: max(1.5em, 1.5vw);
+  padding: max(0.3em, 0.3vw) max(0.5em, 0.5vw);
+}
+
+.second-container .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: max(1em, 1vw);
+}
+
+.second-container .cards .card {
+  width: 23%;
+  padding: max(0.5em, 0.5vw) max(1em, 1vw);
+  background-color: rgba(142, 202, 230, 0.6);
+}
+
+.cards .card h3 {
+  font-size: max(1.5em, 1.5vw);
+  font-weight: bold;
+}
+
+.cards .card .price {
+  font-size: max(1.2em, 1.2vw);
+}
+
+.cards .card .desc {
+  font-size: max(0.9em, 0.9vw);
+}
+
+.cards .card img {
+  max-width: 100%;
+}
+
+.cards .card .bottom {
+  margin-top: max(1.2em, 1.2vw);
+}
+
+.cards .card button {
+  font-size: max(0.8em, 0.8vw);
+  width: 100%;
+}
+
+@media screen and (max-width: 1028px) {
+  .first-container {
+    display: block !important;
+  }
+
+  .first-container .first-section {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .first-container .second-section {
+    width: 100%;
+  }
+
+  .second-container .cards .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .second-container .cards {
+    justify-content: center;
+  }
+
+  .second-container .cards .card {
+    width: 90%;
+  }
+}
